@@ -17,7 +17,7 @@ struct ContentView: View {
     private var exercises: FetchedResults<Exercise>
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(exercises) { exercise in
                     NavigationLink {
