@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  riFit
 //
 //  Created by Steven Duzevich on 2/2/2023.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct HomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -18,16 +18,33 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(exercises) { exercise in
-                    NavigationLink {
-                        Text("Page of \(exercise.name!) exercise")
-                    } label: {
-                        Text(exercise.name!)
-                    }
-                }
+            NavigationLink {
+                ToolsView()
+            } label: {
+                Text("Tools")
+            }
+            NavigationLink {
+                MaxesView()
+            } label: {
+                Text("Maxes")
+            }
+            NavigationLink {
+                WorkoutView()
+            } label: {
+                Text("Workout")
             }
         }
+//        NavigationStack {
+//            List {
+//                ForEach(exercises) { exercise in
+//                    NavigationLink {
+//                        Text("Page of \(exercise.name!) exercise")
+//                    } label: {
+//                        Text(exercise.name!)
+//                    }
+//                }
+//            }
+//        }
     }
 
 //    private func addItem() {
@@ -62,8 +79,8 @@ struct ContentView: View {
 //    }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        HomeView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

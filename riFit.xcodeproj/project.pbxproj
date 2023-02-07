@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460AB9AF2991855600477A8E /* lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AB9AE2991855600477A8E /* lib.swift */; };
 		467A9F45298BD8BC007A8BC8 /* riFit Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F49298BD8BC007A8BC8 /* riFitApp.swift */; };
-		467A9F4C298BD8BC007A8BC8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F4B298BD8BC007A8BC8 /* ContentView.swift */; };
+		467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F4B298BD8BC007A8BC8 /* HomeView.swift */; };
 		467A9F4E298BD8BF007A8BC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467A9F4D298BD8BF007A8BC8 /* Assets.xcassets */; };
 		467A9F51298BD8BF007A8BC8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 467A9F50298BD8BF007A8BC8 /* Preview Assets.xcassets */; };
 		467A9F5E298BD8E3007A8BC8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F5B298BD8E3007A8BC8 /* Persistence.swift */; };
 		467A9F5F298BD8E3007A8BC8 /* riFit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F5C298BD8E3007A8BC8 /* riFit.xcdatamodeld */; };
+		467A9F65298C33B1007A8BC8 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F64298C33B1007A8BC8 /* TestView.swift */; };
+		467A9F67298C39E8007A8BC8 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F66298C39E8007A8BC8 /* ToolsView.swift */; };
+		467A9F69298C39F6007A8BC8 /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F68298C39F6007A8BC8 /* WorkoutView.swift */; };
+		467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6A298C3A03007A8BC8 /* MaxesView.swift */; };
+		467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */; };
+		467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6E298C3B89007A8BC8 /* RICalcView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,14 +48,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		460AB9AE2991855600477A8E /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
 		467A9F3E298BD8BC007A8BC8 /* riFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "riFit Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F49298BD8BC007A8BC8 /* riFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riFitApp.swift; sourceTree = "<group>"; };
-		467A9F4B298BD8BC007A8BC8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		467A9F4B298BD8BC007A8BC8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		467A9F4D298BD8BF007A8BC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		467A9F50298BD8BF007A8BC8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		467A9F5B298BD8E3007A8BC8 /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		467A9F5D298BD8E3007A8BC8 /* riFit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = riFit.xcdatamodel; sourceTree = "<group>"; };
+		467A9F64298C33B1007A8BC8 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		467A9F66298C39E8007A8BC8 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		467A9F68298C39F6007A8BC8 /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		467A9F6A298C3A03007A8BC8 /* MaxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxesView.swift; sourceTree = "<group>"; };
+		467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLiftCalcView.swift; sourceTree = "<group>"; };
+		467A9F6E298C3B89007A8BC8 /* RICalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RICalcView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +96,15 @@
 		467A9F48298BD8BC007A8BC8 /* riFit Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				460AB9AE2991855600477A8E /* lib.swift */,
+				467A9F66298C39E8007A8BC8 /* ToolsView.swift */,
+				467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */,
+				467A9F6E298C3B89007A8BC8 /* RICalcView.swift */,
+				467A9F68298C39F6007A8BC8 /* WorkoutView.swift */,
+				467A9F6A298C3A03007A8BC8 /* MaxesView.swift */,
 				467A9F49298BD8BC007A8BC8 /* riFitApp.swift */,
-				467A9F4B298BD8BC007A8BC8 /* ContentView.swift */,
+				467A9F4B298BD8BC007A8BC8 /* HomeView.swift */,
+				467A9F64298C33B1007A8BC8 /* TestView.swift */,
 				467A9F5B298BD8E3007A8BC8 /* Persistence.swift */,
 				467A9F5C298BD8E3007A8BC8 /* riFit.xcdatamodeld */,
 				467A9F4D298BD8BF007A8BC8 /* Assets.xcassets */,
@@ -198,9 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467A9F69298C39F6007A8BC8 /* WorkoutView.swift in Sources */,
+				467A9F67298C39E8007A8BC8 /* ToolsView.swift in Sources */,
 				467A9F5F298BD8E3007A8BC8 /* riFit.xcdatamodeld in Sources */,
+				467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */,
+				467A9F65298C33B1007A8BC8 /* TestView.swift in Sources */,
+				467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */,
+				467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */,
 				467A9F5E298BD8E3007A8BC8 /* Persistence.swift in Sources */,
-				467A9F4C298BD8BC007A8BC8 /* ContentView.swift in Sources */,
+				460AB9AF2991855600477A8E /* lib.swift in Sources */,
+				467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */,
 				467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
