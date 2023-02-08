@@ -16,13 +16,13 @@ struct RICalcView: View {
         VStack {
             Text("Weight:\(maxLift)")
                 .focusable()
-                .digitalCrownRotation($maxLift, from: 0.0, through: 2500, by: 2.5)
+                .digitalCrownRotation($maxLift, from: 0.0, through: 1000, by: 2.5, sensitivity: .low)
             Text("Reps:\(targetReps)")
                 .focusable()
-                .digitalCrownRotation($targetReps, from: 1.0, through: 100.0, by: 1.0)
+                .digitalCrownRotation($targetReps, from: 1.0, through: 25.0, by: 1.0, sensitivity: .low)
             Text("RI:\(targetRI)")
                 .focusable()
-                .digitalCrownRotation($targetRI, from: 0.0, through: 100.0, by: 2.5)
+                .digitalCrownRotation($targetRI, from: 50.0, through: 100.0, by: 2.5, sensitivity: .low)
             Text("Max: \(calculateWeightAtRI(maxLift: maxLift, targetRI: targetRI/100, targetReps: Int(targetReps)))")
         }
     }

@@ -15,10 +15,10 @@ struct MaxLiftCalcView: View {
         VStack {
             Text("Weight:\(weight)")
                 .focusable()
-                .digitalCrownRotation($weight, from: 0.0, through: 2500, by: 2.5)
+                .digitalCrownRotation($weight, from: 0.0, through: 1000, by: 2.5, sensitivity: .low)
             Text("Reps:\(Int(reps))")
                 .focusable()
-                .digitalCrownRotation($reps, from: 1.0, through: 100.0, by: 1.0)
+                .digitalCrownRotation($reps, from: 1.0, through: 25.0, by: 1.0, sensitivity: .low)
             Text("Max: \(calculateMaxLift(weight: weight, reps: Int(reps)))")
         }
     }

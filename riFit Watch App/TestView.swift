@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 struct ExerciseModalView: View {
     @Binding var isPresented: Bool
@@ -50,7 +51,6 @@ struct TestView: View {
                     }
             }
             .focusable()
-
         }
     }
 }
