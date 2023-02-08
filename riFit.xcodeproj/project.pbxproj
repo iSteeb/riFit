@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		460AB9AF2991855600477A8E /* lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AB9AE2991855600477A8E /* lib.swift */; };
+		460AB9AF2991855600477A8E /* Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AB9AE2991855600477A8E /* Lib.swift */; };
 		467A9F45298BD8BC007A8BC8 /* riFit Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F49298BD8BC007A8BC8 /* riFitApp.swift */; };
 		467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F4B298BD8BC007A8BC8 /* HomeView.swift */; };
@@ -21,10 +21,9 @@
 		467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6A298C3A03007A8BC8 /* MaxesView.swift */; };
 		467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */; };
 		467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6E298C3B89007A8BC8 /* RICalcView.swift */; };
-		46FFA3002993A30C0039C10C /* fiveThreeOneEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA2FF2993A30C0039C10C /* fiveThreeOneEnum.swift */; };
-		46FFA3022993A32A0039C10C /* olyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3012993A32A0039C10C /* olyEnum.swift */; };
-		46FFA3042993A33E0039C10C /* supersetEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3032993A33E0039C10C /* supersetEnum.swift */; };
-		46FFA3062993A65A0039C10C /* exerciseSetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3052993A65A0039C10C /* exerciseSetClass.swift */; };
+		46FFA3002993A30C0039C10C /* StrEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA2FF2993A30C0039C10C /* StrEnum.swift */; };
+		46FFA3022993A32A0039C10C /* OlyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3012993A32A0039C10C /* OlyEnum.swift */; };
+		46FFA3062993A65A0039C10C /* ExerciseSetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		460AB9AE2991855600477A8E /* lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lib.swift; sourceTree = "<group>"; };
+		460AB9AE2991855600477A8E /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
 		467A9F3E298BD8BC007A8BC8 /* riFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "riFit Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F49298BD8BC007A8BC8 /* riFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = riFitApp.swift; sourceTree = "<group>"; };
@@ -67,10 +66,9 @@
 		467A9F6A298C3A03007A8BC8 /* MaxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxesView.swift; sourceTree = "<group>"; };
 		467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLiftCalcView.swift; sourceTree = "<group>"; };
 		467A9F6E298C3B89007A8BC8 /* RICalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RICalcView.swift; sourceTree = "<group>"; };
-		46FFA2FF2993A30C0039C10C /* fiveThreeOneEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fiveThreeOneEnum.swift; sourceTree = "<group>"; };
-		46FFA3012993A32A0039C10C /* olyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = olyEnum.swift; sourceTree = "<group>"; };
-		46FFA3032993A33E0039C10C /* supersetEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = supersetEnum.swift; sourceTree = "<group>"; };
-		46FFA3052993A65A0039C10C /* exerciseSetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exerciseSetClass.swift; sourceTree = "<group>"; };
+		46FFA2FF2993A30C0039C10C /* StrEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrEnum.swift; sourceTree = "<group>"; };
+		46FFA3012993A32A0039C10C /* OlyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlyEnum.swift; sourceTree = "<group>"; };
+		46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSetClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +102,10 @@
 		467A9F48298BD8BC007A8BC8 /* riFit Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				46FFA2FF2993A30C0039C10C /* fiveThreeOneEnum.swift */,
-				46FFA3012993A32A0039C10C /* olyEnum.swift */,
-				46FFA3032993A33E0039C10C /* supersetEnum.swift */,
-				46FFA3052993A65A0039C10C /* exerciseSetClass.swift */,
-				460AB9AE2991855600477A8E /* lib.swift */,
+				46FFA2FF2993A30C0039C10C /* StrEnum.swift */,
+				46FFA3012993A32A0039C10C /* OlyEnum.swift */,
+				46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */,
+				460AB9AE2991855600477A8E /* Lib.swift */,
 				467A9F66298C39E8007A8BC8 /* ToolsView.swift */,
 				467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */,
 				467A9F6E298C3B89007A8BC8 /* RICalcView.swift */,
@@ -232,18 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				467A9F69298C39F6007A8BC8 /* WorkoutView.swift in Sources */,
-				46FFA3042993A33E0039C10C /* supersetEnum.swift in Sources */,
 				467A9F67298C39E8007A8BC8 /* ToolsView.swift in Sources */,
 				467A9F5F298BD8E3007A8BC8 /* riFit.xcdatamodeld in Sources */,
 				467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */,
 				467A9F65298C33B1007A8BC8 /* TestView.swift in Sources */,
 				467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */,
-				46FFA3022993A32A0039C10C /* olyEnum.swift in Sources */,
+				46FFA3022993A32A0039C10C /* OlyEnum.swift in Sources */,
 				467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */,
 				467A9F5E298BD8E3007A8BC8 /* Persistence.swift in Sources */,
-				460AB9AF2991855600477A8E /* lib.swift in Sources */,
-				46FFA3062993A65A0039C10C /* exerciseSetClass.swift in Sources */,
-				46FFA3002993A30C0039C10C /* fiveThreeOneEnum.swift in Sources */,
+				460AB9AF2991855600477A8E /* Lib.swift in Sources */,
+				46FFA3062993A65A0039C10C /* ExerciseSetClass.swift in Sources */,
+				46FFA3002993A30C0039C10C /* StrEnum.swift in Sources */,
 				467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */,
 				467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */,
 			);
