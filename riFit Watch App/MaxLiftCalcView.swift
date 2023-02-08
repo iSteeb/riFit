@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct MaxLiftCalcView: View {
-    @AppStorage("MaxLiftCalcViewWeightVar") private var weight = 0.0
-    @AppStorage("MaxLiftCalcViewRepsVar") private var reps = 1.0
+    @AppStorage("MaxLiftCalcViewWeightVar") private var weight: Double = 100.0
+    @AppStorage("MaxLiftCalcViewRepsVar") private var reps: Int = 1
 
     var body: some View {
         VStack {
-            Text("Weight:\(weight)")
-                .focusable()
-                .digitalCrownRotation($weight, from: 0.0, through: 1000, by: 2.5, sensitivity: .low)
-            Text("Reps:\(Int(reps))")
-                .focusable()
-                .digitalCrownRotation($reps, from: 1.0, through: 25.0, by: 1.0, sensitivity: .low)
-            Text("Max: \(calculateMaxLift(weight: weight, reps: Int(reps)))")
+            Picker("Weight Lifted", selection: $weight) {
+                ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
+                    Text("\(i)")
+                }
+            }
+            Picker("Number of Reps", selection: $reps) {
+                ForEach(Array(stride(from: 1, to: 26, by: 1)), id: \.self) { i in
+                    Text("\(i)")
+                }
+            }
+            Text("Max: \(calculateMaxLift(weight: weight, reps: reps))")
         }
     }
 }

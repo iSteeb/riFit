@@ -8,22 +8,28 @@
 import SwiftUI
 
 struct RICalcView: View {
-    @AppStorage("RICCalcViewMaxLiftVar") private var maxLift = 0.0
-    @AppStorage("RICalcViewTargetRepsVar") private var targetReps = 1.0
-    @AppStorage("RICalcViewTargetRIVar") private var targetRI = 0.0
+    @AppStorage("RICCalcViewMaxLiftVar") private var maxLift: Double = 0.0
+    @AppStorage("RICalcViewTargetRepsVar") private var targetReps: Int = 1
+    @AppStorage("RICalcViewTargetRIVar") private var targetRI: Double = 75.0
         
     var body: some View {
         VStack {
-            Text("Weight:\(maxLift)")
-                .focusable()
-                .digitalCrownRotation($maxLift, from: 0.0, through: 1000, by: 2.5, sensitivity: .low)
-            Text("Reps:\(targetReps)")
-                .focusable()
-                .digitalCrownRotation($targetReps, from: 1.0, through: 25.0, by: 1.0, sensitivity: .low)
-            Text("RI:\(targetRI)")
-                .focusable()
-                .digitalCrownRotation($targetRI, from: 50.0, through: 100.0, by: 2.5, sensitivity: .low)
-            Text("Max: \(calculateWeightAtRI(maxLift: maxLift, targetRI: targetRI/100, targetReps: Int(targetReps)))")
+            Picker("1RM", selection: $maxLift) {
+                ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
+                    Text("\(i)")
+                }
+            }
+            Picker("Rep Target", selection: $targetReps) {
+                ForEach(Array(stride(from: 1, to: 26, by: 1)), id: \.self) { i in
+                    Text("\(i)")
+                }
+            }
+            Picker("RI Target", selection: $targetRI) {
+                ForEach(Array(stride(from: 50.0, to: 102.5, by: 2.5)), id: \.self) { i in
+                    Text("\(i)")
+                }
+            }
+            Text("Weight: \(calculateWeightAtRI(maxLift: maxLift, targetRI: targetRI/100, targetReps: targetReps))")
         }
     }
 }

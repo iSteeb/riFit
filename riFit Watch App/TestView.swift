@@ -50,7 +50,6 @@ struct TestView: View {
                         Text("\($0) people")
                     }
             }
-            .focusable()
         }
     }
 }
