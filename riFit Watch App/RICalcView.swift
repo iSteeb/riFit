@@ -16,7 +16,7 @@ struct RICalcView: View {
         VStack {
             Picker("1RM", selection: $maxLift) {
                 ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
-                    Text("\(i)")
+                    Text("\(i, specifier: "%.1f")")
                 }
             }
             Picker("Rep Target", selection: $targetReps) {
@@ -26,10 +26,10 @@ struct RICalcView: View {
             }
             Picker("RI Target", selection: $targetRI) {
                 ForEach(Array(stride(from: 50.0, to: 102.5, by: 2.5)), id: \.self) { i in
-                    Text("\(i)")
+                    Text("\(i, specifier: "%.1f")")
                 }
             }
-            Text("Weight: \(calculateWeightAtRI(maxLift: maxLift, targetRI: targetRI/100, targetReps: targetReps))")
+            Text("\(calculateWeightAtRI(maxLift: maxLift, targetRI: targetRI/100, targetReps: targetReps), specifier: "%.1f")")
         }
     }
 }

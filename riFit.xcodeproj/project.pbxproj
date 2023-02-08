@@ -106,13 +106,13 @@
 				46FFA3012993A32A0039C10C /* OlyEnum.swift */,
 				46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */,
 				460AB9AE2991855600477A8E /* Lib.swift */,
+				467A9F4B298BD8BC007A8BC8 /* HomeView.swift */,
 				467A9F66298C39E8007A8BC8 /* ToolsView.swift */,
 				467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */,
 				467A9F6E298C3B89007A8BC8 /* RICalcView.swift */,
 				467A9F68298C39F6007A8BC8 /* WorkoutView.swift */,
 				467A9F6A298C3A03007A8BC8 /* MaxesView.swift */,
 				467A9F49298BD8BC007A8BC8 /* riFitApp.swift */,
-				467A9F4B298BD8BC007A8BC8 /* HomeView.swift */,
 				467A9F64298C33B1007A8BC8 /* TestView.swift */,
 				467A9F5B298BD8E3007A8BC8 /* Persistence.swift */,
 				467A9F5C298BD8E3007A8BC8 /* riFit.xcdatamodeld */,
@@ -376,6 +376,7 @@
 				DEVELOPMENT_TEAM = 7997G399U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "riFit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -406,6 +407,7 @@
 				DEVELOPMENT_TEAM = 7997G399U7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "riFit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;

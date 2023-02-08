@@ -15,7 +15,7 @@ struct MaxLiftCalcView: View {
         VStack {
             Picker("Weight Lifted", selection: $weight) {
                 ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
-                    Text("\(i)")
+                    Text("\(i, specifier: "%.1f")")
                 }
             }
             Picker("Number of Reps", selection: $reps) {
@@ -23,7 +23,7 @@ struct MaxLiftCalcView: View {
                     Text("\(i)")
                 }
             }
-            Text("Max: \(calculateMaxLift(weight: weight, reps: reps))")
+            Text("\(calculateMaxLift(weight: weight, reps: reps), specifier: "%.1f")")
         }
     }
 }
