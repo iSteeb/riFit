@@ -53,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		4602A4E92995243F008BE2F8 /* StartWorkoutIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutIntent.swift; sourceTree = "<group>"; };
+		4602A4EB29953B70008BE2F8 /* riFit Watch AppRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "riFit Watch AppRelease.entitlements"; sourceTree = "<group>"; };
 		460AB9AE2991855600477A8E /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
 		467A9F3E298BD8BC007A8BC8 /* riFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "riFit Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +147,7 @@
 		467A9F48298BD8BC007A8BC8 /* riFit Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				4602A4EB29953B70008BE2F8 /* riFit Watch AppRelease.entitlements */,
 				467A9F64298C33B1007A8BC8 /* TestView.swift */,
 				467A9F49298BD8BC007A8BC8 /* riFitApp.swift */,
 				4602A4E829952333008BE2F8 /* HomeView */,
@@ -422,6 +424,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "riFit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Required to enable Action Button Intent";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Required to enable Action Button Intent";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -445,6 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "riFit Watch App/riFit Watch AppRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"riFit Watch App/Preview Content\"";
@@ -453,6 +458,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "riFit-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Required to enable Action Button Intent";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Required to enable Action Button Intent";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
