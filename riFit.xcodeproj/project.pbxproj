@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4602A4EA2995243F008BE2F8 /* StartWorkoutIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4602A4E92995243F008BE2F8 /* StartWorkoutIntent.swift */; };
 		460AB9AF2991855600477A8E /* Lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460AB9AE2991855600477A8E /* Lib.swift */; };
 		467A9F45298BD8BC007A8BC8 /* riFit Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F49298BD8BC007A8BC8 /* riFitApp.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4602A4E92995243F008BE2F8 /* StartWorkoutIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutIntent.swift; sourceTree = "<group>"; };
 		460AB9AE2991855600477A8E /* Lib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lib.swift; sourceTree = "<group>"; };
 		467A9F3E298BD8BC007A8BC8 /* riFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = riFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		467A9F44298BD8BC007A8BC8 /* riFit Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "riFit Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4602A4E429952101008BE2F8 /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				4602A4E92995243F008BE2F8 /* StartWorkoutIntent.swift */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		4602A4E529952112008BE2F8 /* ToolsView */ = {
+			isa = PBXGroup;
+			children = (
+				467A9F66298C39E8007A8BC8 /* ToolsView.swift */,
+				467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */,
+				467A9F6E298C3B89007A8BC8 /* RICalcView.swift */,
+			);
+			path = ToolsView;
+			sourceTree = "<group>";
+		};
+		4602A4E62995213E008BE2F8 /* WorkoutView */ = {
+			isa = PBXGroup;
+			children = (
+				467A9F68298C39F6007A8BC8 /* WorkoutView.swift */,
+			);
+			path = WorkoutView;
+			sourceTree = "<group>";
+		};
+		4602A4E729952148008BE2F8 /* MaxesView */ = {
+			isa = PBXGroup;
+			children = (
+				467A9F6A298C3A03007A8BC8 /* MaxesView.swift */,
+			);
+			path = MaxesView;
+			sourceTree = "<group>";
+		};
+		4602A4E829952333008BE2F8 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				467A9F4B298BD8BC007A8BC8 /* HomeView.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
 		467A9F37298BD8BC007A8BC8 = {
 			isa = PBXGroup;
 			children = (
@@ -102,18 +146,17 @@
 		467A9F48298BD8BC007A8BC8 /* riFit Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				467A9F64298C33B1007A8BC8 /* TestView.swift */,
+				467A9F49298BD8BC007A8BC8 /* riFitApp.swift */,
+				4602A4E829952333008BE2F8 /* HomeView */,
+				4602A4E729952148008BE2F8 /* MaxesView */,
+				4602A4E62995213E008BE2F8 /* WorkoutView */,
+				4602A4E529952112008BE2F8 /* ToolsView */,
+				4602A4E429952101008BE2F8 /* Intents */,
 				46FFA2FF2993A30C0039C10C /* StrEnum.swift */,
 				46FFA3012993A32A0039C10C /* OlyEnum.swift */,
 				46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */,
 				460AB9AE2991855600477A8E /* Lib.swift */,
-				467A9F4B298BD8BC007A8BC8 /* HomeView.swift */,
-				467A9F66298C39E8007A8BC8 /* ToolsView.swift */,
-				467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */,
-				467A9F6E298C3B89007A8BC8 /* RICalcView.swift */,
-				467A9F68298C39F6007A8BC8 /* WorkoutView.swift */,
-				467A9F6A298C3A03007A8BC8 /* MaxesView.swift */,
-				467A9F49298BD8BC007A8BC8 /* riFitApp.swift */,
-				467A9F64298C33B1007A8BC8 /* TestView.swift */,
 				467A9F5B298BD8E3007A8BC8 /* Persistence.swift */,
 				467A9F5C298BD8E3007A8BC8 /* riFit.xcdatamodeld */,
 				467A9F4D298BD8BF007A8BC8 /* Assets.xcassets */,
@@ -238,6 +281,7 @@
 				467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */,
 				467A9F5E298BD8E3007A8BC8 /* Persistence.swift in Sources */,
 				460AB9AF2991855600477A8E /* Lib.swift in Sources */,
+				4602A4EA2995243F008BE2F8 /* StartWorkoutIntent.swift in Sources */,
 				46FFA3062993A65A0039C10C /* ExerciseSetClass.swift in Sources */,
 				46FFA3002993A30C0039C10C /* StrEnum.swift in Sources */,
 				467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */,
@@ -436,6 +480,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7997G399U7;
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.riFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -452,6 +497,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7997G399U7;
 				INFOPLIST_KEY_CFBundleDisplayName = riFit;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = duz.ie.riFit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
