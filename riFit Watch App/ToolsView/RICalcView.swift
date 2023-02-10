@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct RICalcView: View {
-    @AppStorage("RICCalcViewMaxLiftVar") private var maxLift: Double = 0.0
-    @AppStorage("RICalcViewTargetRepsVar") private var targetReps: Int = 1
-    @AppStorage("RICalcViewTargetRIVar") private var targetRI: Double = 75.0
+    @AppStorage("RICCalcViewMaxLiftVar") var maxLift: Double = 0.0
+    @AppStorage("RICalcViewTargetRepsVar") var targetReps: Int = 1
+    @AppStorage("RICalcViewTargetRIVar") var targetRI: Double = 75.0
     
     var calculateSetAI: (Int) -> Double
     func calculateWeightAtRI(maxLift: Double, targetRI: Double, targetReps: Int) -> Double {
@@ -39,8 +39,9 @@ struct RICalcView: View {
     }
 }
 
-//struct RICalcView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        RICalcView()
-//    }
-//}
+struct RICalcView_Previews: PreviewProvider {
+    static var previews: some View {
+        let parent = ToolsView()
+        RICalcView(calculateSetAI: parent.calculateSetAI)
+    }
+}

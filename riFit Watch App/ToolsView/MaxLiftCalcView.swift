@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MaxLiftCalcView: View {
-    @AppStorage("MaxLiftCalcViewWeightVar") private var weight: Double = 100.0
-    @AppStorage("MaxLiftCalcViewRepsVar") private var reps: Int = 1
+    @AppStorage("MaxLiftCalcViewWeightVar") var weight: Double = 100.0
+    @AppStorage("MaxLiftCalcViewRepsVar") var reps: Int = 1
 
     var calculateSetAI: (Int) -> Double
     func calculateMaxLift(weight: Double, reps: Int) -> Double {
@@ -33,8 +33,9 @@ struct MaxLiftCalcView: View {
     }
 }
 
-//struct MaxLiftCalcView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MaxLiftCalcView()
-//    }
-//}
+struct MaxLiftCalcView_Previews: PreviewProvider {
+    static var previews: some View {
+        let parent = ToolsView()
+        MaxLiftCalcView(calculateSetAI: parent.calculateSetAI)
+    }
+}

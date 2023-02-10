@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct ToolsView: View {
-    
     @AppStorage("KMOD") var KMOD: Double = 0.0425
 
     func calculateSetAI(reps: Int) -> Double {
@@ -28,8 +27,8 @@ struct ToolsView: View {
     }
 }
 
-//struct ToolsView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ToolsView()
-//    }
-//}
+struct ToolsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ToolsView()
+    }
+}
