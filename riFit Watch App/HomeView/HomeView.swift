@@ -33,11 +33,6 @@ struct HomeView: View {
             } label: {
                 Text("Workout")
             }
-            NavigationLink {
-                TestView()
-            } label: {
-                Text("Test")
-            }
         }
 //        NavigationStack {
 //            List {

@@ -18,11 +18,6 @@ struct ToolsView: View {
         TabView {
             MaxLiftCalcView(calculateSetAI: calculateSetAI)
             RICalcView(calculateSetAI: calculateSetAI)
-            Picker("KMOD", selection: $KMOD) {
-                ForEach(Array(stride(from: 0.0, to: 0.1025, by: 0.0025)), id: \.self) { i in
-                    Text("\((i*100), specifier: "%.2f")")
-                }
-            }
         }
     }
 }
