@@ -7,7 +7,8 @@
 
 import Foundation
 
-class exerciseSet {
+class ExerciseSet: Identifiable {
+    let id = UUID()
     private var reps: Int
     private var intensity: Double
     private var maxLift: Double
