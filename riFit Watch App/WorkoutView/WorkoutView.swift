@@ -8,21 +8,29 @@
 import SwiftUI
 
 struct WorkoutView: View {
+    @State var pattern: ProgramType = .five
     @State var maxLift: Double = 100.0
-    @State var pattern: StrProgramType = .five
+    @State var relativeIntensity: Double = 1.0
 
     @State var output: [ExerciseSet] = []
 
     var body: some View {
         
         VStack {
-            Picker("Weight", selection: $maxLift) {
-                ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
-                    Text("\(i, specifier: "%.1f")")
+            HStack {
+                Picker("Weight", selection: $maxLift) {
+                    ForEach(Array(stride(from: 0.0, to: 1002.5, by: 2.5)), id: \.self) { i in
+                        Text("\(i, specifier: "%.1f")")
+                    }
+                }
+                Picker("RI", selection: $relativeIntensity) {
+                    ForEach(Array(stride(from: 50.0, to: 102.5, by: 2.5)), id: \.self) { i in
+                        Text("\(i, specifier: "%.1f")")
+                    }
                 }
             }
             Picker("Pattern", selection: $pattern) {
-                ForEach(StrProgramType.allCases, id: \.self) { i in
+                ForEach(ProgramType.allCases, id: \.self) { i in
                     Text("\(i.rawValue)")
                 }
             }
@@ -31,13 +39,16 @@ struct WorkoutView: View {
             }
         }
         .onAppear {
-            output = generateFiveThreeOneSets(pattern: pattern, maxLift: maxLift)
+            output = generateSets(pattern: pattern, maxLift: maxLift, relativeIntensity: relativeIntensity/100)
         }
-        .onChange(of: maxLift, perform: { newValue in
-            output = generateFiveThreeOneSets(pattern: pattern, maxLift: maxLift)
-        })
         .onChange(of: pattern, perform: { newValue in
-            output = generateFiveThreeOneSets(pattern: pattern, maxLift: maxLift)
+            output = generateSets(pattern: pattern, maxLift: maxLift, relativeIntensity: relativeIntensity/100)
+        })
+        .onChange(of: maxLift, perform: { newValue in
+            output = generateSets(pattern: pattern, maxLift: maxLift, relativeIntensity: relativeIntensity/100)
+        })
+        .onChange(of: relativeIntensity, perform: { newValue in
+            output = generateSets(pattern: pattern, maxLift: maxLift, relativeIntensity: relativeIntensity/100)
         })
     }
 }

@@ -20,11 +20,17 @@ enum ProgramType: String, Equatable, CaseIterable {
     case singles = "Singles"
     case balanced = "Balanced"
     case pulls = "Pulls"
+    // lewis'
+    case twelve = "12/10/8/6"
+    case eight = "8/6/4/2"
+    case fivebyfive = "5x5"
     }
+
+// TODO: Fix the relative intensity input here, probably using the toolsView stuff!
 
 func generateSets(pattern: ProgramType, maxLift: Double, relativeIntensity: Double = 1.0) -> [ExerciseSet] {
     switch pattern {
-    // 5/3/1
+        // 5/3/1
     case .five:
         return [ExerciseSet(reps: 5, intensity: 0.65, maxLift: maxLift),
                 ExerciseSet(reps: 5, intensity: 0.75, maxLift: maxLift),
@@ -41,13 +47,13 @@ func generateSets(pattern: ProgramType, maxLift: Double, relativeIntensity: Doub
         return [ExerciseSet(reps: 3, intensity: 0.65, maxLift: maxLift),
                 ExerciseSet(reps: 3, intensity: 0.75, maxLift: maxLift),
                 ExerciseSet(reps: 3, intensity: 0.85, maxLift: maxLift)]
-    // Contrast TODO: Fix
+        // Contrast TODO: Fix
     case .contrast:
         return [ExerciseSet(reps: 2, intensity: 0.9, maxLift: maxLift),
                 ExerciseSet(reps: 4, intensity: 0.0, maxLift: maxLift),
                 ExerciseSet(reps: 4, intensity: 0.3, maxLift: maxLift),
                 ExerciseSet(reps: 4, intensity: 0.0, maxLift: maxLift)]
-    // Oly TODO: Fix????
+        // Oly TODO: Fix????
     case .volume:
         return [ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
                 ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
@@ -73,5 +79,22 @@ func generateSets(pattern: ProgramType, maxLift: Double, relativeIntensity: Doub
                 ExerciseSet(reps: 5, intensity: relativeIntensity + 0.025, maxLift: maxLift),
                 ExerciseSet(reps: 3, intensity: relativeIntensity, maxLift: maxLift),
                 ExerciseSet(reps: 2, intensity: relativeIntensity + 0.025, maxLift: maxLift)]
+    // lewis'
+    case .twelve:
+        return [ExerciseSet(reps: 12, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 10, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 8, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 6, intensity: relativeIntensity, maxLift: maxLift)]
+    case .eight:
+        return [ExerciseSet(reps: 8, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 6, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 4, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 2, intensity: relativeIntensity, maxLift: maxLift)]
+    case .fivebyfive:
+        return [ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift)]
     }
 }
