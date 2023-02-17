@@ -22,9 +22,9 @@ func generateFiveThreeOneSets(pattern: StrProgramType, maxLift: Double) -> [Exer
                 ExerciseSet(reps: 5, intensity: 0.75, maxLift: maxLift),
                 ExerciseSet(reps: 5, intensity: 0.85, maxLift: maxLift)]
     case .three:
-        return [ExerciseSet(reps: 3, intensity: 0.65, maxLift: maxLift),
-                ExerciseSet(reps: 3, intensity: 0.75, maxLift: maxLift),
-                ExerciseSet(reps: 3, intensity: 0.85, maxLift: maxLift)]
+        return [ExerciseSet(reps: 3, intensity: 0.70, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.80, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.90, maxLift: maxLift)]
     case .one:
         return [ExerciseSet(reps: 5, intensity: 0.75, maxLift: maxLift),
                 ExerciseSet(reps: 3, intensity: 0.85, maxLift: maxLift),
