@@ -21,8 +21,7 @@
 		467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6A298C3A03007A8BC8 /* MaxesView.swift */; };
 		467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */; };
 		467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467A9F6E298C3B89007A8BC8 /* RICalcView.swift */; };
-		46FFA3002993A30C0039C10C /* StrEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA2FF2993A30C0039C10C /* StrEnum.swift */; };
-		46FFA3022993A32A0039C10C /* OlyEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3012993A32A0039C10C /* OlyEnum.swift */; };
+		46FFA3002993A30C0039C10C /* ProgramTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA2FF2993A30C0039C10C /* ProgramTypeEnum.swift */; };
 		46FFA3062993A65A0039C10C /* ExerciseSetClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,8 +66,7 @@
 		467A9F6A298C3A03007A8BC8 /* MaxesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxesView.swift; sourceTree = "<group>"; };
 		467A9F6C298C3B80007A8BC8 /* MaxLiftCalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaxLiftCalcView.swift; sourceTree = "<group>"; };
 		467A9F6E298C3B89007A8BC8 /* RICalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RICalcView.swift; sourceTree = "<group>"; };
-		46FFA2FF2993A30C0039C10C /* StrEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrEnum.swift; sourceTree = "<group>"; };
-		46FFA3012993A32A0039C10C /* OlyEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlyEnum.swift; sourceTree = "<group>"; };
+		46FFA2FF2993A30C0039C10C /* ProgramTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramTypeEnum.swift; sourceTree = "<group>"; };
 		46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSetClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,8 +151,7 @@
 				4602A4E62995213E008BE2F8 /* WorkoutView */,
 				4602A4E529952112008BE2F8 /* ToolsView */,
 				4602A4E429952101008BE2F8 /* Intents */,
-				46FFA2FF2993A30C0039C10C /* StrEnum.swift */,
-				46FFA3012993A32A0039C10C /* OlyEnum.swift */,
+				46FFA2FF2993A30C0039C10C /* ProgramTypeEnum.swift */,
 				46FFA3052993A65A0039C10C /* ExerciseSetClass.swift */,
 				467A9F5B298BD8E3007A8BC8 /* Persistence.swift */,
 				467A9F5C298BD8E3007A8BC8 /* riFit.xcdatamodeld */,
@@ -276,12 +273,11 @@
 				467A9F6B298C3A03007A8BC8 /* MaxesView.swift in Sources */,
 				467A9F65298C33B1007A8BC8 /* TestView.swift in Sources */,
 				467A9F6D298C3B80007A8BC8 /* MaxLiftCalcView.swift in Sources */,
-				46FFA3022993A32A0039C10C /* OlyEnum.swift in Sources */,
 				467A9F6F298C3B89007A8BC8 /* RICalcView.swift in Sources */,
 				467A9F5E298BD8E3007A8BC8 /* Persistence.swift in Sources */,
 				4602A4EA2995243F008BE2F8 /* StartWorkoutIntent.swift in Sources */,
 				46FFA3062993A65A0039C10C /* ExerciseSetClass.swift in Sources */,
-				46FFA3002993A30C0039C10C /* StrEnum.swift in Sources */,
+				46FFA3002993A30C0039C10C /* ProgramTypeEnum.swift in Sources */,
 				467A9F4C298BD8BC007A8BC8 /* HomeView.swift in Sources */,
 				467A9F4A298BD8BC007A8BC8 /* riFitApp.swift in Sources */,
 			);

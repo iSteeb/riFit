@@ -1,5 +1,5 @@
 //
-//  OlyEnum.swift
+//  ProgramTypeEnum.swift
 //  riFit Watch App
 //
 //  Created by Steven Duzevich on 8/2/2023.
@@ -7,15 +7,47 @@
 
 import Foundation
 
-enum OlyProgramType {
-    case volume
-    case singles
-    case balanced
-    case pulls
-}
+enum ProgramType: String, Equatable, CaseIterable {
+    // 5/3/1
+    case five = "5/5/5"
+    case three = "3/3/3"
+    case one = "5/3/1"
+    case deload = "Deload"
+    // Contrast
+    case contrast = "Contrast"
+    // Oly
+    case volume = "Volume"
+    case singles = "Singles"
+    case balanced = "Balanced"
+    case pulls = "Pulls"
+    }
 
-func generateOlySets(pattern: OlyProgramType, maxLift: Double, relativeIntensity: Double) -> [ExerciseSet] {
+func generateSets(pattern: ProgramType, maxLift: Double, relativeIntensity: Double = 1.0) -> [ExerciseSet] {
     switch pattern {
+    // 5/3/1
+    case .five:
+        return [ExerciseSet(reps: 5, intensity: 0.65, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: 0.75, maxLift: maxLift),
+                ExerciseSet(reps: 5, intensity: 0.85, maxLift: maxLift)]
+    case .three:
+        return [ExerciseSet(reps: 3, intensity: 0.70, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.80, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.90, maxLift: maxLift)]
+    case .one:
+        return [ExerciseSet(reps: 5, intensity: 0.75, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.85, maxLift: maxLift),
+                ExerciseSet(reps: 1, intensity: 0.95, maxLift: maxLift)]
+    case .deload:
+        return [ExerciseSet(reps: 3, intensity: 0.65, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.75, maxLift: maxLift),
+                ExerciseSet(reps: 3, intensity: 0.85, maxLift: maxLift)]
+    // Contrast TODO: Fix
+    case .contrast:
+        return [ExerciseSet(reps: 2, intensity: 0.9, maxLift: maxLift),
+                ExerciseSet(reps: 4, intensity: 0.0, maxLift: maxLift),
+                ExerciseSet(reps: 4, intensity: 0.3, maxLift: maxLift),
+                ExerciseSet(reps: 4, intensity: 0.0, maxLift: maxLift)]
+    // Oly TODO: Fix????
     case .volume:
         return [ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
                 ExerciseSet(reps: 5, intensity: relativeIntensity, maxLift: maxLift),
